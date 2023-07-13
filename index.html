@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catch The Sanrio Character</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch The Sanrio Character</h1>
+      <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>What is your "favorite" character?</h1>
+      <ul class="character-list">
+        <li>
+          <button class="choose-cha-btn">
+            <p>Kitty</p>
+            <img src="./images/kitty.png" alt="Kitty"/>
+          </button>
+        </li>
+        <li>
+          <button class="choose-cha-btn">
+            <p>My Melody</p>
+            <img
+               src="./images/mymelody.png" alt="My Melody"/>
+          </button>
+        </li>
+        <li>
+          <button class="choose-cha-btn">
+            <p>Kuromi</p>
+            <img
+               src="./images/kuromi.png" alt="Kuromi" />
+          </button>
+        </li>
+        <li>
+          <button class="choose-cha-btn">
+            <p>george</p>
+            <img
+               src="./images/george.png" alt="george" />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Time: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="message" class="message">
+        Game Over
+      </h5>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

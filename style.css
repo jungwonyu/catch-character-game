@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    background: url("./images/background.png") no-repeat center bottom;
+    background-color: #8ed9f9;
+    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}
+
+h1 {
+    line-height: 1.4;
+}
+
+.btn {
+    border: 0;
+    background-color: #fff;
+    color: pink;
+    padding: 15px 20px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+}
+
+.screen.on {
+    margin-top: -100vh;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.character-list li {
+    margin: 10px;
+}
+
+.choose-cha-btn {
+    width: 200px;
+    height: 220px;
+
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.choose-cha-btn:hover {
+    background-color: #fff;
+    color: pink;
+}
+
+.choose-cha-btn:active {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-cha-btn img {
+    width: 130px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.game-container {
+    position: relative;
+}
+
+.time,
+.score {
+    position: absolute;
+    top: 20px;
+}
+
+.time {
+    left: 20px;
+}
+
+.score {
+    right: 20px;
+}
+
+.message {
+    width: 100%;
+
+    line-height: 1.7;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    transition: transform 0.4s ease-in;
+    z-index: 100;
+}
+
+.message.visible {
+    transform: translate(-50%, 150%);
+    opacity: 1;
+}
+
+.cha {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+
+    cursor: pointer;
+}
+
+.cha.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.cha img {
+    width: 100px;
+    height: 100px;
+}
