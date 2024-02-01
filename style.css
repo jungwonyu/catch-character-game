@@ -15,6 +15,7 @@ body {
     overflow: hidden;
     margin: 0;
     text-align: center;
+    user-select: none;
 }
 
 a {
@@ -28,7 +29,7 @@ h1 {
 .btn {
     border: 0;
     background-color: #fff;
-    color: pink;
+    color: rgb(2, 89, 252);
     padding: 15px 20px;
     font-family: inherit;
     cursor: pointer;
@@ -70,7 +71,7 @@ h1 {
 
 .choose-cha-btn {
     width: 200px;
-    height: 220px;
+    height: auto;
 
     background-color: transparent;
     border: 2px solid #fff;

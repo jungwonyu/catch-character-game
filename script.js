@@ -95,6 +95,6 @@ function increaseScore() {
 // 게임 종료
 function gameEnd() {
   game_container.innerHTML = `<h1>Time Over</h1>
-  <p>Your final score is ${score}</p><button class="btn" onclick="location.reload()">REDO</button>`;
+  <p>Your final score is ${score}.</p><button class="btn" onclick="location.reload()">REDO</button>`;
 }
 
