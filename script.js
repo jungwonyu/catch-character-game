@@ -120,7 +120,6 @@ function increaseScore() {
 
 // 점수 초기화
 function resetScore() {
-  seconds = 0;
   score = 0;
   scoreEl.innerHTML = `Score: ${score}`;
 }
