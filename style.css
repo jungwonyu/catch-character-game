@@ -136,7 +136,7 @@ h1 {
     opacity: 1;
 }
 
-.cha {
+.cha, .bomb {
     width: 100px;
     height: 100px;
 
@@ -156,6 +156,11 @@ h1 {
 }
 
 .cha img {
+    width: 100px;
+    height: 100px;
+}
+
+.bomb img {
     width: 100px;
     height: 100px;
 }
